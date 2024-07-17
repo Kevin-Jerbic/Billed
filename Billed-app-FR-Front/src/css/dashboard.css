@@ -117,3 +117,6 @@
   cursor: pointer;
 }
 
+.modal-content {
+  width: max-content !important; 
+}
