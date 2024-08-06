@@ -25,9 +25,7 @@ const rows = data => {
 
   return data && data.length
     ? data
-        // La méthode sort() ne semble pas affectée le tableau initial, il faut donc utiliser la méthode reverse() pour inverser l'ordre des éléments.
         .sort((a, b) => new Date(b.date) - new Date(a.date))
-        .reverse()
         .map(bill => row(bill))
         .join('')
     : '';
